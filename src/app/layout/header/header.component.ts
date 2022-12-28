@@ -21,10 +21,9 @@ export class HeaderComponent implements OnInit{
   ngOnInit(): void {
     this.authService.stateUser().subscribe((res) => {
       this.user = res
-
       this.authService.getUserById().subscribe((users) => {
         const aUser = users.find(elem => elem.email == this.user.email)
-
+        
         if(aUser.idRol == 1){
           this.isAdmin = true;
         }

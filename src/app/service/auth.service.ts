@@ -26,6 +26,8 @@ export class AuthService {
     const postUser = new User();
     postUser.email = user.email;
     postUser.password = user.password;
+    postUser.idRol = 1;
+    postUser.rol = "admin"
 
     const userRef = collection(this.firestore, 'users');
     return addDoc(userRef, Object.assign({}, postUser));
