@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="input-align">
+        <div class="login-card">
+            <div class="login-card-header">
+                <h1>Register</h1>
+                <div>Please register to use the platform</div>
+            </div>
+            <form [formGroup]="formRegisterUser" class="login-card-form">
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded"><i class="fa fa-envelope"></i></span>
+                    <input 
+                        type="email" 
+                        formControlName="email"
+                        placeholder="Enter email"
+                        required
+                    >
+                </div>
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded"><i class="fa fa-lock"></i></span>
+                    <input 
+                        type="password" 
+                        formControlName="password"
+                        placeholder="Enter Password"
+                        required
+                    >
+                </div>
+                <div class="form-item-other">
+                    <div class="checkbox">
+                    </div>
+                    <a href="#">I forgot my password!</a>
+                </div>
+                <button type="submit" (click)="onSubmit()">Sign In</button>
+            </form>
+            <div class="login-card-footer">
+                I have an account? <a href="/auth/login">Login.</a>
+            </div>
+        </div>
+    </div>
+</div>

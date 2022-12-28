@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="text-center" style="margin-top: 5%; color: white;">
+        <h4>Warehouse Grid</h4>
+    </div>
+    <div class="row" style="margin-top: 5%; margin-bottom: 3%">
+        <div class="col-md-4">
+            <button 
+                (click)="openModal()"
+                class="btn btn-primary">
+                Add WareHouse
+            </button>
+        </div>
+    </div>
+</div>
+
+<app-table-warehouse [warehouseArray]="warehouseArray"></app-table-warehouse>
+
+
+<ng-template #template let-modal>
+
+</ng-template>

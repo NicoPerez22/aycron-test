@@ -1,0 +1,22 @@
+<ul class="list-group" *ngIf="places.length">
+    <h5>Address entered</h5>
+    <li class="list-group-item list-group-item-action" *ngFor="let place of places">
+        <h6>{{place.text_es}}</h6>
+        <p>{{place.place_name}}</p>
+
+        <button class="btn btn-warning" (click)="getDirecctions(place)">
+            Go to the address
+        </button>
+    </li>
+</ul>
+
+
+<div style="margin-top: 5%;" *ngIf="warehouseList.length">
+    <ul class="list-group">
+        <h5>WareHouse List</h5>
+        <li class="list-group-item list-group-item-action" *ngFor="let wh of warehouseList">
+            <h6>{{wh.name}}</h6>
+            <p>{{wh.address}}</p>
+        </li>
+    </ul>
+</div>

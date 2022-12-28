@@ -1,0 +1,11 @@
+.map-container{
+    display: flex;
+    border-bottom-right-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    top: 14px;
+    right: 11px;
+    width: 50vw;
+    height: 35vw;
+    margin-bottom: 5%;
+    margin-top: -1%;
+}

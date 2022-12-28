@@ -1,0 +1,50 @@
+<div class="text-center margin-item">
+    <h4 style="color: white;">Map Position WareHouse</h4>
+</div>
+
+<div class="item-center">
+    <div class="card-custom">    
+        <div class="row">
+            <div class="col-md-8">
+                <label for="exampleFormControlInput1" class="form-label">Address</label>
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    #addressQuery
+                    (keyup)="onQueryChangedPlaces(addressQuery.value)"
+                    (keyup.backspace)="removeAll()"
+                >
+            </div>
+    
+            <div class="col-md-4" style="margin-top: 30px;">
+                <button 
+                    (click)="drawPolyLine()"
+                    class="btn btn-primary">
+                    Calculate warehouse
+                </button>
+    
+                <!-- <button 
+                    (click)="drawPolyLine()"
+                    class="btn btn-primary">
+                    Search 2
+                </button> -->
+
+            </div>
+        </div>
+        <div class="row" style="margin-top: 5%;">
+            <app-search-result [places]="places" [warehouseList]="warehouseList"></app-search-result>
+        </div>
+    </div>
+
+    <div>
+        <app-maps>
+            <button 
+            (click)="goMyLocation()"
+            class="btn btn-primary btn-location">
+            My Location
+        </button>
+        </app-maps>
+    </div>
+</div>
+
+

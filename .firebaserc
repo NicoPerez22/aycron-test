@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "aycron-test"
+  },
+  "targets": {
+    "aycron-test": {
+      "hosting": {
+        "aycron-test": [
+          "aycron-test"
+        ]
+      }
+    }
+  }
+}

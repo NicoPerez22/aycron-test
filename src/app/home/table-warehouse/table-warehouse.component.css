@@ -1,0 +1,25 @@
+.icons-table {
+    background-color: transparent !important;
+    border: none;
+}
+
+.paginator-class{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-custom {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    box-shadow: 0px 10px 16px -13px black
+}
